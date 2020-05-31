@@ -24,7 +24,7 @@ from botocore.exceptions import NoCredentialsError
 
 cache = SimpleCache()
 
-app = Flask(__name__, template_folder="build/", static_folder="build/static")
+app = Flask(__name__)
 
 load_dotenv(os.path.join(os.getcwd(), '.env'))
 AWS_BUCKET_NAME = os.getenv("AWS_BUCKET_NAME")
@@ -199,7 +199,7 @@ def eval(caption):
     return urls
 @app.route('/', methods=["GET"])
 def home():
-    return render_template("index.html")
+    return render_template("index.html", flask_token="home")
 
 
 @app.route('/time')
