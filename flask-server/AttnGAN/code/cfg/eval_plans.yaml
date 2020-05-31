@@ -1,0 +1,29 @@
+CONFIG_NAME: 'eval_plans'
+
+DATASET_NAME: 'plans'
+DATA_DIR: '../data/plans'
+GPU_ID: 1
+WORKERS: 3
+
+B_VALIDATION: False  # True  # False
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: False
+    NET_G: ./AttnGAN/output/plans_plans_2020_04_10_19_24_53/Model/netG_epoch_6400.pth    #'../models/plansG_attn.pth'
+    B_NET_D: False
+    BATCH_SIZE: 100
+    NET_E: ./AttnGAN/DAMSMencoders/plans/text_encoder1550.pth
+
+GAN:
+    DF_DIM: 96
+    GF_DIM: 48
+    Z_DIM: 100
+    R_NUM: 3
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 1
+    WORDS_NUM: 25

@@ -1,0 +1,30 @@
+CONFIG_NAME: 'eval_plans2'
+
+DATASET_NAME: 'plans2'
+DATA_DIR: '../data/plans2'
+GPU_ID: 1
+WORKERS: 3
+
+B_VALIDATION: False  # True  # False
+TREE:
+    BRANCH_NUM: 3
+
+
+
+TRAIN:
+    FLAG: False
+    NET_G: ./AttnGAN/output/netG_epoch_9600.pth    #'../models/plansG_attn.pth'
+    B_NET_D: False
+    BATCH_SIZE: 100
+    NET_E: './AttnGAN/DAMSMencoders/plans2/text_encoder3100.pth'
+
+GAN:
+    DF_DIM: 96
+    GF_DIM: 48
+    Z_DIM: 100
+    R_NUM: 3
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 1
+    WORDS_NUM: 25

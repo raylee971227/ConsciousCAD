@@ -1,0 +1,29 @@
+.logoheader {
+   text-align: center;
+   padding-top: 50px;
+   padding-bottom: 75px;
+}
+
+.form {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.form input {
+  width: 200px;
+  height: 55px;
+  font-size: 28px;
+}
+textarea {
+  width: 1500px;
+  height: 150px;
+  font-size: 32px;
+}
+.generatedplans {
+  text-align:center
+}
+
+.generatedplans img{
+  width:1000px;
+  height:1000px
+}

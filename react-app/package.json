@@ -1,0 +1,46 @@
+{
+  "name": "consciouscad",
+  "version": "1.0.0",
+  "description": "Consciouscad generates architecture floor plans using a GAN.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "concurrently": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "http-proxy-middleware": "^1.0.4",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "client": "react-scripts start ",
+    "server": "source venv/bin/activate; python app.py",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raylee971227/ConsciousCAD.git"
+  },
+  "author": "Raymond Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raylee971227/ConsciousCAD/issues"
+  },
+  "homepage": "https://github.com/raylee971227/ConsciousCAD#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
