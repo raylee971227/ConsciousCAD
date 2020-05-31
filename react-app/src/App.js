@@ -30,7 +30,7 @@ class App extends React.Component {
       if(res.status == 200) {
         document.getElementById("plan1").src = res.data[1]
       }
-      else {
+      else if (res.status == 500) {
         alert("There was an error. Please try again.")
       }
       // let res = await axios.get("/time");
