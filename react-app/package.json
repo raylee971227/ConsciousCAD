@@ -15,7 +15,7 @@
   "devDependencies": {},
   "scripts": {
     "client": "react-scripts start ",
-    "server": "source venv/bin/activate; python app.py",
+    "server": "source ../flask-server/venv/bin/activate; python ../flask-server/app.py",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

@@ -20,7 +20,7 @@ import pickle
 import json
 import logging 
 import boto3
-from botocore.exceptions import NoCredentialsError
+from botocore.exceptions import ClientError
 
 cache = SimpleCache()
 
