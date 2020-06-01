@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/react/css/main.4eb546f7.chunk.css",
+    "main.js": "/static/react/js/main.9828053d.chunk.js",
+    "main.js.map": "/static/react/js/main.9828053d.chunk.js.map",
+    "runtime-main.js": "/static/react/js/runtime-main.2314581f.js",
+    "runtime-main.js.map": "/static/react/js/runtime-main.2314581f.js.map",
+    "js/2.92b8907a.chunk.js": "/static/react/js/2.92b8907a.chunk.js",
+    "js/2.92b8907a.chunk.js.map": "/static/react/js/2.92b8907a.chunk.js.map",
+    "../../flask-server/templates/index.html": "/static/react/../../flask-server/templates/index.html",
+    "css/main.4eb546f7.chunk.css.map": "/static/react/css/main.4eb546f7.chunk.css.map",
+    "js/2.92b8907a.chunk.js.LICENSE.txt": "/static/react/js/2.92b8907a.chunk.js.LICENSE.txt",
+    "media/consciouscad_logo.png": "/static/react/media/consciouscad_logo.8a1c4962.png",
+    "media/main.png": "/static/react/media/main.6aca5971.png",
+    "precache-manifest.33e842063bb4f6a528e71f594c294089.js": "/static/react/precache-manifest.33e842063bb4f6a528e71f594c294089.js",
+    "service-worker.js": "/static/react/service-worker.js"
+  },
+  "entrypoints": [
+    "js/runtime-main.2314581f.js",
+    "js/2.92b8907a.chunk.js",
+    "css/main.4eb546f7.chunk.css",
+    "js/main.9828053d.chunk.js"
+  ]
+}
