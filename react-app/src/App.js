@@ -43,6 +43,7 @@ class App extends React.Component {
         <body>
         <section class="logoheader">
           <img id="logo" src={logo}></img>
+          <h3>AI generated architectural floor plans</h3>
         </section>
 
         <section class="form">
@@ -58,6 +59,12 @@ class App extends React.Component {
           <div>
               <img id="plan1" src={mainphoto}></img>
             </div>
+        </section>
+        <section class="detailtext">
+            <div>ConsciousCAD is an application that allows for anyone to generate architectural plans from speech or text. 
+              This project was taken on by cross disciplinary architecture studio class called "Machine Learning in Architecture" at The Cooper Union lead by Professor Benjamin Aranda and Professor Sam Keene. 
+              The application and implementation of ConsciouscCAD was done by <a href="https://github.com/raylee971227">Raymond Lee</a>.
+              Special thanks to Maren Speyer, Jesse Bassett, Ji Hoon Park, Taesha Aurora for the inspiration of ConsciousCAD and curating a custom dataset to train the model on.</div>
         </section>
         </body>
       </div>

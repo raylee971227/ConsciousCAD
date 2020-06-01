@@ -1,7 +1,11 @@
 .logoheader {
    text-align: center;
    padding-top: 50px;
-   padding-bottom: 75px;
+   padding-bottom: 50px;
+}
+
+.logoheader h3 {
+  font-size: 34px;
 }
 
 .form {
@@ -26,4 +30,17 @@ textarea {
 .generatedplans img{
   width:1000px;
   height:1000px
+}
+
+.detailtext {
+  margin-left: auto;
+  margin-right:auto;
+  width: 2000px;
+  padding-top: 50px;
+}
+
+.detailtext div {
+  word-wrap: break-word;
+
+  font-size: 28px;
 }
