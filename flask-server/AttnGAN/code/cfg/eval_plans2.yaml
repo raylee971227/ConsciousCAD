@@ -13,10 +13,10 @@ TREE:
 
 TRAIN:
     FLAG: False
-    NET_G: ./AttnGAN/output/netG_epoch_9600.pth    #'../models/plansG_attn.pth'
+    NET_G: ../flask-server/AttnGAN/output/netG_epoch_9600.pth    #'../models/plansG_attn.pth'
     B_NET_D: False
     BATCH_SIZE: 100
-    NET_E: './AttnGAN/DAMSMencoders/plans2/text_encoder3100.pth'
+    NET_E: '../flask-server/AttnGAN/DAMSMencoders/text_encoder3100.pth'
 
 GAN:
     DF_DIM: 96

@@ -26,7 +26,7 @@ cache = SimpleCache()
 
 app = Flask(__name__)
 
-load_dotenv(os.path.join(os.getcwd(), '.env'))
+load_dotenv(os.path.join(os.getcwd(), '../flask-server/.env'))
 AWS_BUCKET_NAME = os.getenv("AWS_BUCKET_NAME")
 ACCESS_KEY = os.getenv("ACCESS_KEY")
 SECRET_KEY = os.getenv("SECRET_KEY")
@@ -60,7 +60,7 @@ def word_index():
     if ixtoword is None or wordtoix is None:
         #print("ix and word not cached")
         # load word to index dictionary
-        x = pickle.load(open('AttnGAN/data/plans2/captions.pickle', 'rb'))
+        x = pickle.load(open('../flask-server/AttnGAN/data/plans2/captions.pickle', 'rb'))
         ixtoword = x[2]
         wordtoix = x[3]
         del x
@@ -70,7 +70,7 @@ def word_index():
     return wordtoix, ixtoword
 
 def models(word_len):
-    cfg_from_file('./AttnGAN/code/cfg/eval_plans2.yaml')
+    cfg_from_file('../flask-server/AttnGAN/code/cfg/eval_plans2.yaml')
     text_encoder = cache.get('text_encoder')
     if text_encoder is None:
         #print("text_encoder not cached")

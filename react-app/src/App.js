@@ -27,6 +27,7 @@ class App extends React.Component {
     }
     else {
       let res = await axios.post('/generate',{caption: this.state.caption});
+      console.log(res)
       if(res.status == 200) {
         document.getElementById("plan1").src = res.data[1]
       }
